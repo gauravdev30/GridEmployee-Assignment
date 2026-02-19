@@ -1,0 +1,86 @@
+import { Clock, Hourglass, Users, DollarSign, AlertTriangle } from "lucide-react";
+
+export const stats = [
+  { label: "Total", value: 169, icon: Clock, bg: "bg-gray-100", iconColor: "text-gray-600" },
+  { label: "Regular", value: 7, icon: Clock, bg: "bg-gray-200/70", iconColor: "text-gray-600" },
+  { label: "Overtime", value: 320, icon: Hourglass, bg: "bg-orange-100", iconColor: "text-orange-600" },
+  { label: "OT2", value: 20, icon: Users, bg: "bg-green-100", iconColor: "text-green-600" },
+  { label: "Holiday", value: 8, icon: DollarSign, bg: "bg-blue-100", iconColor: "text-blue-600" },
+  { label: "Anomalies", value: 3, icon: AlertTriangle, bg: "bg-red-100", iconColor: "text-red-600" },
+];
+
+export const employees = [
+  {
+    name: "Michael Shaun",
+    avatar: "https://i.pravatar.cc/40?img=1",
+    total: "07:23",
+    regular: "07:23",
+    overtime: "-",
+    ot2: "-",
+    holiday: "-",
+  },
+  {
+    name: "Ethan Lee",
+    avatar: "https://i.pravatar.cc/40?img=2",
+    total: "08:28",
+    regular: "08:00",
+    overtime: "-",
+    ot2: "-",
+    holiday: "0:28",
+  },
+  {
+    name: "Emily Baker",
+    avatar: "https://i.pravatar.cc/40?img=3",
+    total: "09:53",
+    regular: "05:20",
+    overtime: "01:21",
+    ot2: "-",
+    holiday: "03:12",
+  },
+  {
+    name: "Liam Carter",
+    avatar: "https://i.pravatar.cc/40?img=4",
+    total: "10:46",
+    regular: "7:34",
+    overtime: "02:01",
+    ot2: "-",
+    holiday: "01:11",
+  },
+  {
+    name: "Grace Kim",
+    avatar: "https://i.pravatar.cc/40?img=5",
+    total: "12:59",
+    regular: "06:46",
+    overtime: "04:00",
+    ot2: "01:10",
+    holiday: "01:03",
+  },
+  {
+    name: "Noah Williams",
+    avatar: "https://i.pravatar.cc/40?img=6",
+    total: "16:44",
+    regular: "07:12",
+    overtime: "03:00",
+    ot2: "02:12",
+    holiday: "02:32",
+  },
+  {
+    name: "Michael Shaun",
+    avatar: "https://i.pravatar.cc/40?img=7",
+    total: "16:56",
+    regular: "12:56",
+    overtime: "03:00",
+    ot2: "01:00",
+    holiday: "-",
+  },
+  {
+    name: "Liam Carter",
+    avatar: "https://i.pravatar.cc/40?img=8",
+    total: "15:03",
+    regular: "06:27",
+    overtime: "04:12",
+    ot2: "3:02",
+    holiday: "1:22",
+  },
+];
+
