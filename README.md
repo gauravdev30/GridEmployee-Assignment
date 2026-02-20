@@ -139,3 +139,57 @@ npm run preview -	Preview production build locally
 npm run lint -	Run ESLint to check code quality
 
 ===============================================================================================
+
+**Assumptions & Notes**
+
+The screens are designed to closely follow the Figma design, maintaining spacing, font sizes, colors, and layout. The primary target resolution is 1440 × 1024, as specified in Figma. The design is fully mobile-responsive, and resizing via browser developer tools retains the Figma layout consistency.
+
+**Minor deviations from the original Figma design were made intentionally for better usability and functionality:**
+
+Some icons were replaced with similar alternatives to indicate the same functionality.
+
+The sidebar is made openable and closable for improved user experience.
+
+A menu icon was added on the top bar to toggle the sidebar.
+
+The pagination, originally at the bottom, has also been positioned on the right side for a cleaner layout.
+
+All screens, except People and TimeManagement > Timesheet, redirect to a formatted fallback screen with a proper message instead of showing a blank or error page.
+
+**Functionality enhancements added to the UI:**
+
+On the Timesheet screen, a datepicker calendar has been integrated for selecting dates.
+
+The time displayed on the Timesheet screen is dynamic and shows live time.
+
+Search functionality is implemented for data stored in data/people.ts and data/timesheet.ts, simulating API calls for filtering results.
+
+All reusable components are organized in a proper folder structure, improving maintainability and scalability.
+
+**Styling and responsiveness:**
+
+TailwindCSS is used for rapid styling and responsive design.
+
+The Inter font is used throughout the project for readability and modern UI. Although the Figma design specifies the Brother 1816 font, it is a paid font, so Inter was used as a free, visually similar alternative.
+
+The project is fully mobile-friendly, with proper handling of scrollbars for the sidebar and main content when viewed on smaller screens.
+
+**Why tailwind.config.css was not included:**
+
+This project uses the default TailwindCSS configuration, which provides all the required utilities for styling the assignment screens.
+
+Since no custom theme extensions, colors, or plugins were needed beyond the default Tailwind setup, a separate tailwind.config.css file was unnecessary.
+
+This approach keeps the project lightweight and focused on the UI implementation rather than unnecessary configuration overhead.
+
+**Project stack and implementation notes:**
+
+Built using React + TypeScript + Vite, providing fast development, type safety, and efficient builds.
+
+The assignment is primarily UI-focused, but the added features like datepicker, search, dynamic time, and responsive sidebar demonstrate practical frontend skills.
+
+All data is mocked in the data folder and accessed like API calls to simulate real-world applications.
+
+This setup ensures a production-ready structure, clean code practices, and a maintainable project while closely following the Figma design.
+
+===============================================================================================
